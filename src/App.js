@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BasicSelect from "./components/BasicSelect";
+import SelectWithDifferentAppearances from "./components/SelectWithDifferentAppearences";
+import SelectWithDifferentIcons from "./components/SelectWithDifferentIcons";
+import SelectWithDifferentSizes from "./components/SelectWithDifferentSizes";
+import SelectWithDifferentStyles from "./components/SelectWithDifferentStyles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="base">
+    <div className="app"><BasicSelect/></div>
+    <div className="app"><SelectWithDifferentAppearances/></div>
+    <div className="app"><SelectWithDifferentIcons/></div>
+    <div className="app"><SelectWithDifferentSizes/></div>
+    <div className="app"><SelectWithDifferentStyles/></div>
     </div>
   );
 }
